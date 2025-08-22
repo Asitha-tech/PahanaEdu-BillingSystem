@@ -58,7 +58,8 @@ public class ItemDAO {
     }
 
     // Get single item by ID
-    public Item getItemById(int id) {
+ // Get single item by ID
+    public static Item getItemById(int id) {
         String sql = "SELECT * FROM items WHERE item_id = ?";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -83,6 +84,7 @@ public class ItemDAO {
 
         return null;
     }
+
 
     // Update item
     public void updateItem(Item item) {
@@ -147,5 +149,7 @@ public class ItemDAO {
                 }
             }
         }
+        
+        
     }
 }

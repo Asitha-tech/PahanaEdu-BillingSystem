@@ -110,7 +110,7 @@ if (user == null) {
             <li><a href="order-history.jsp">Order History</a></li>
             <li><a href="help.jsp">Help</a></li>
             <% if ("admin".equals(user.getRole())) { %>
-                <li><a href="#">Manage Staff</a></li>
+                <li><a href="manageStaff.jsp">Manage Staff</a></li>
             <% } %>
             <li><a href="logout.jsp">Logout</a></li>
         </ul>

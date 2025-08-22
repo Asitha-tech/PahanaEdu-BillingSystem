@@ -61,7 +61,7 @@
             </tr>
             <% if (items != null && !items.isEmpty()) {
                    for (OrderItem oi : items) {
-                       Item item = ItemDAO.getItemById(oi.getItemID());  // ✅ now static
+                       Item item = ItemDAO.getItemById(oi.getItemID());
             %>
                 <tr>
                     <td><%= (item != null ? item.getName() : "Unknown") %></td>
